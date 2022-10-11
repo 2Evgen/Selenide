@@ -30,7 +30,6 @@ public class DeliveryTest {
     }
 
     @Test
-
     void shouldRegisterCardDelivery() {
         $("span[data-test-id='city'] input").setValue("Ка");
         $$("div.popup__content div").find(exactText("Казань")).click();
