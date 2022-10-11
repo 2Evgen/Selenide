@@ -1,7 +1,7 @@
 package ru.netology;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
+
 import org.junit.jupiter.api.Test;
 
 import java.text.SimpleDateFormat;
@@ -30,7 +30,7 @@ public class DeliveryTest {
     }
 
     @Test
-    @DisplayName("Должен забронировать встречу при вводе валидных данных")
+
     void shouldRegisterCardDelivery() {
         $("span[data-test-id='city'] input").setValue("Ка");
         $$("div.popup__content div").find(exactText("Казань")).click();
